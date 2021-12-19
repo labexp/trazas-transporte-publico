@@ -20,6 +20,7 @@ Las trazas de viajes de un servicio de transporte público deben ser subidas por
 2. **Clone su repositorio local**. El comando para conseguirlo es: `git clone <URL.git>`, donde *<URL.git>* debe sustituirlo por la dirección a su repositorio. 
 
 
+
 3. **Cree una rama (*branch*) en su repositorio**. Asumiendo que se encuentra en la rama `master` actualizada (revisar comando `$git status`), el comando para crear una rama con el nombre *viaje-alajuela-targuases* es: `$git checkout -b viaje-alajuela-targuases`.
 
 4. **Agregue las trazas** a las carpetas que corresponda y súbalas a su repositorio. En esta parte deberá utilizar los comandos `git add` y `git commit`. Luego suba los cambios a su repositorio con el comando `git push`. 
@@ -35,3 +36,11 @@ Recuerde mantener actualizado su repositorio. Estos dos pasos pueden ser de util
 A. **Agregue el *upstream* a su repo**. En este caso el repositorio *upstream* será llamado *labexp*, el comando para esto es: `git remote add labexp https://github.com/jamescr/trazas-transporte-publico.git`,
 
 B. **Actualice su rama master**. Asumiendo que se encuentra en la rama `master` (revisar comando `$git status`), el comando para actualizar desde el *upstream* es: : `$git pull labexp master`. En caso que no se encuentre en la rama `master` use antes el comando `git checkout master`.
+
+# Convertir archivos gpx a csv
+
+1. Identifique la ruta del directorio local de las trazas y agregue la ruta al archivo .py.
+2. Utilice el comando `python converter_gpx_to_csv.py` para ejecutar el script.
+
+
+
